@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background: rgb(52, 255, 52);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 145, 0);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(0, 112, 0);
+}
+.container{
+    height: 1200px;
+    width: 100%;
+    background: linear-gradient(45deg,rgb(161, 255, 161),rgb(25, 190, 25));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*top side*/
+
+.topside{
+    width: 700px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    font-size: 20px;
+    color: rgb(1, 95, 1);
+    margin-bottom: 10px;
+}
+.nav{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav1{
+    text-decoration: none;
+    color: rgb(1, 95, 1);
+}
+.nav1:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+    transition: .5s;
+    text-shadow: 0px 0px 20px green;
+    color: greenyellow;
+}
+
+/*intro side*/
+
+.introside{
+    height: 250px;
+    width: 750px;
+    display: flex;
+    gap: 100px;
+    position: relative;
+    left: 40px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(0, 68, 0);
+}
+.intro1{
+    font-size: 35px;
+    pointer-events: none;
+}
+.green{
+    font-weight: 600;
+}
+.intro2{
+    font-size: 16px;
+    pointer-events: none;
+}
+.pic{
+    height: 250px;
+    width: 250px;
+    background: green;
+    clip-path: path("M 125 67.5 A 1 1 0 0 1 187.5 125 A 1 1 0 0 1 125 187.5 A 1 1 0 0 1 67.5 125 A 1 1 0 0 1 125 67.5 Z");
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#collect{
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 94, 0);
+    font-weight: 600;
+    background: green;
+    color: rgb(28, 203, 28);
+    box-shadow:0px 0px 5px black;
+    word-spacing: 2px;
+    cursor: pointer;
+}
+#collect:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    color: greenyellow;
+}
+
+/*line1 side*/
+
+.line1{
+    width: 100%;
+    height: 200px;
+    background: rgb(0, 104, 0);
+    margin-top: 20px;
+    display: flex;
+}
+.leftline{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(0, 177, 0);
+    font-size: 20px;
+}
+.left{
+   margin:0px 20px 0px 40px;
+   text-shadow: 0px 0px 5px black;
+}
+.left1{
+    text-decoration: none;
+    color:rgb(0, 177, 0);
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+.left1:hover{
+    text-decoration: underline;
+    transition: .5s;
+    text-shadow: 0px 0px 20px green;
+    color: greenyellow;
+}
+.green1{
+    font-weight: 600;
+    color: rgb(69, 216, 79);
+}
+.rightline{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.right{
+    margin: 0px 40px 0px 10px;
+    font-size: 15px;
+    color: rgb(18, 180, 3);
+    text-shadow: 0px 0px 5px black;
+    line-height: 25px;
+    pointer-events: none;
+}
+
+/*type side*/
+
+.typeside{
+    height: 250px;
+    width: 1000px;
+    margin: 60px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.card{
+    background: rgb(0, 171, 0);
+    height:250px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px black;
+}
+.logo{
+    margin:30px 0px 20px 0px;
+    font-size: 60px;
+    color: rgb(0, 92, 0);
+}
+.titles{
+    text-decoration: none;
+    color: rgb(0, 92, 0);
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px rgb(0, 92, 0);
+}
+.titles:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    transition: .5s;
+    text-shadow: 0px 0px 20px green;
+    color: greenyellow;
+}
+.words{
+    font-size: 12px;
+    margin: 20px 5px 0px 5px;
+    color: rgb(0, 92, 0);
+    text-shadow: 0px 0px 1px black;
+    text-align: center;
+    pointer-events: none;
+}
+.card:hover{
+    transition: .5s;
+    transform: scale(1.02) rotateX(6deg) rotateY(6deg);
+    box-shadow: -5px 5px 5px rgb(21, 21, 21);
+}
+
+/*shop side*/
+
+.line2{
+    width: 100%;
+    height: 200px;
+    background: rgb(0, 104, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+.shop{
+    font-size: 25px;
+    color: rgb(0, 177, 0);
+    text-shadow: 0px 0px 5px black;
+    text-align: center;
+    pointer-events: none;
+    margin-left: 40px;
+}
+.green3{
+    font-size: 15px;
+}
+.buylogo{
+    font-size: 100px;
+    color: rgb(9, 182, 9);
+    text-shadow: 0px 0px 3px black;
+}
+.buy:hover,.buylogo:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    color: yellowgreen;
+}
+
+/*social media side*/
+
+.social{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.ending{
+    font-size: 20px;
+    margin: 6px 10px 0px 0px;
+    color: rgb(0, 68, 0);
+    pointer-events: none;
+}
+.media{
+    font-size: 32px;
+    color: rgb(0, 92, 0);
+    text-shadow: 0px 0px 1px black;
+}
+.media:hover{
+    transform: scale(1.2);
+    transition: .4s;
+    color: yellowgreen;
+    text-shadow: 0px 0px 5px black;
+}
